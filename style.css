@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+/* font-family: 'League Spartan', sans-serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    font-family: 'League Spartan', sans-serif;
+    background: url(/images/bg-pattern-top-desktop.svg) ,url(/images/bg-pattern-bottom-desktop.svg);
+    background-position: top left , bottom right;
+    background-repeat: no-repeat;
+    
+}
+.container{
+    width: 65%;
+    margin: 130px auto;
+    
+}
+.top{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:8em;
+    margin-bottom: 5em;
+
+}
+
+.top h1{
+    color: hsl(300, 43%, 22%);
+    font-size: 50px;
+}
+.top .left p{
+    line-height: 1.4;
+    margin-top: 1em;
+    color: hsl(303, 10%, 53%);
+    font-weight: 500;
+}
+.top .right .rating {
+    background:hsl(300, 24%, 96%);
+    padding: 1em 2.4em 1em 1.5em ;
+    margin-bottom: 1em;
+    font-weight: 500;
+    font-weight: bold;
+    color: hsl(300, 43%, 22%);
+    border-radius: 10px;
+    display: inline-block;
+}
+.top .right span{
+    margin-right: 1em;
+}
+.container .top .left h1{
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 700;
+}
+p{
+    font-size: 15px;
+
+}
+.bottom{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1em;
+    
+}
+.bottom .box{
+    padding: 1.5em;
+    background:hsl(300, 43%, 22%) ;
+    color: #fff;
+    border-radius: 10px;
+}
+.bottom .box .main-para{
+    line-height: 1.4;
+    color:hsl(300, 24%, 96%);
+    font-weight: 500;
+}
+
+.bottom img{
+    width: 35px;
+    border-radius: 100%;
+    margin-right: 1em;
+}
+.bottom .head-in-card{
+    display: flex;
+    margin-bottom: 2em;
+}
+.bottom .head-in-card h4{
+    margin-bottom: 0.5em;
+   /* color: hsl(300, 24%, 96%); */
+}
+
+.bottom .head-in-card p{
+    color:hsl(333, 80%, 67%) ;
+  
+ }
+
+ .box:nth-of-type(2){
+    position: relative;
+    top: 1em;
+ }
+ 
+ .box:nth-of-type(3){
+    position: relative;
+    top:2em;
+ }
+
+ @media(max-width:768px){
+    .top{
+        display: block;
+    }
+    .top .right{
+        margin-top: 2em;
+    }
+    .bottom {
+        display: block;
+    }
+    .top .right .rating{
+        display: block;
+    }
+    .top .right .rating span{
+        display: block;
+        margin-bottom: 0.5em;
+    }
+    .container{
+        width: 80%;
+        margin-top: 50px;
+        text-align: center;
+    }
+    body{
+        background: url(/images/bg-pattern-top-mobile.svg) ,url(/images/bg-pattern-bottom-mobile.svg);
+    background-position: top left , bottom right;
+    background-repeat: no-repeat;
+    
+    }
+ }
+
+ @media(min-width:768px){
+    .rating:nth-of-type(2){
+        position: relative;
+        left: 2.5em;
+    }
+    .rating:nth-of-type(3){
+        position: relative;
+        left: 5em;
+    }
+    .top .right .rating{
+        display: flex;
+    }
+
+  
+ }
